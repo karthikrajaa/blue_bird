@@ -1,0 +1,28 @@
+
+  .navh:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .navh:hover:after {
+    opacity: 1;
+    right: 30px;
+  }
+
+  .logo{
+    padding-left: 75px;
+    color: #00CD89;
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .logo {
+      padding-left: 1px;
+    }
+    
+  }
+  

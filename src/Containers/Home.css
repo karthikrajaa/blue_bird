@@ -1,0 +1,182 @@
+.header {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    background-color: #4000AC;
+    background-image: linear-gradient(to right, #4000AC , #0084E5);
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Original+Surfer&display=swap');
+
+.banner {
+  width: 100%;
+  height: auto;
+  padding-bottom: 150px;
+  background-color: #4000AC;  
+  background-image: linear-gradient(to right, #4000AC , #0084E5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Original+Surfer&display=swap');
+
+
+
+.but {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  width: 250px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.but{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.but:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  transition: 0.5s;
+  color: rgb(103, 104, 104);
+}
+
+.but:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  right: -20px;
+  transition: 0.5s;
+  color: rgb(103, 104, 104);
+}
+
+.but:hover:after {
+  opacity: 1;
+  right: 25px;
+  transition: 0.5s;
+  
+}
+
+.diamond {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  opacity: 0.2;
+  top: 150px;
+  left: 80px;
+  background-color: #7FDBFF;
+  transform: rotate(15deg);
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+.diamond {
+  animation: rotate 15000ms infinite linear;
+  transform: rotate(45deg);
+  
+}
+
+.card1 {
+  background-color: #4000AC;  
+  background-image: linear-gradient(to right, rgb(78, 62, 253) , #00C4FF);
+  transition: 0.5s;
+}
+
+.card2{
+  background-color: rgb(255, 255, 255);  
+  background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255));
+  border-radius: 5px;
+}
+
+.card1:hover{
+  transition: 0.5s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.round{
+  background-color: #ffffff;
+  border-radius:50% ;
+  height: 130px;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 5px 10px -8px;
+}
+
+.round:hover{
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.danner {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;  
+  background-image: linear-gradient(to right, #F3F8FB, #F4F9FB);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vanner {
+  width: 100%;
+  height: auto;
+  background-color: #4000AC;  
+  background-image: linear-gradient(to right, #0086E6, #252ABE);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.caros1{
+  position: relative;
+  bottom:135px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px solid rgb(96, 85, 243);
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '»';
+  font-size: 23px;
+  color: rgb(96, 85, 243);
+}
+
+.carousel-control-prev-icon:after {
+  content: '«';
+  font-size: 23px;
+  color: rgb(96, 85, 243);
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+}
+}
